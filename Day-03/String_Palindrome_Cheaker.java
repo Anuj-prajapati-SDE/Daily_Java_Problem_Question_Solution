@@ -8,5 +8,7 @@ public class String_Palindrome_Cheaker {
           reverseWord = word[i];
       };
       System.out.print(reverseWord);
+
+    //   uncompleted
 }
 }
