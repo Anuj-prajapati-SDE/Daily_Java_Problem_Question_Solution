@@ -11,6 +11,5 @@ public static void main(String[] args){
                 count++;   
          }
           System.out.print(Arrays.toString(arr));
-
     }
 }  
