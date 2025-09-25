@@ -9,4 +9,4 @@ public  class Factorial_Program{
         }
         System.out.print("Factorial is :" + fact);
     }
-}
+}    

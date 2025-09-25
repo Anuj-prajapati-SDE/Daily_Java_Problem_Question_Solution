@@ -1,14 +1,24 @@
 public class String_Palindrome_Cheaker {
-    public static void main (String arg [])
-{
-      String word = "Madam" ;
-      String reverseWord = "";
+ public static void main(String[] args) {
+        String str = "racecar";
 
-      for(int i = word.length() ; i> 0; i--){
-          reverseWord = word[i];
-      };
-      System.out.print(reverseWord);
+        int left = 0;                 
+        int right = str.length() - 1; 
+        boolean isPalindrome = true;
 
-    //   uncompleted
-}
+        while (left < right) {
+            if (str.charAt(left) != str.charAt(right)) {
+                isPalindrome = false;
+                break;
+            }
+            left++;
+            right--;
+        }
+
+        if (isPalindrome) {
+            System.out.println(str + " is a Palindrome.");
+        } else {
+            System.out.println(str + " is NOT a Palindrome.");
+        }
+    }
 }
